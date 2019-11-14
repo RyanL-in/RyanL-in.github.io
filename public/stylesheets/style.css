@@ -1,0 +1,36 @@
+@keyframes change {
+  0% {
+    bottom: 40px;
+    opacity: 100%; }
+  100% {
+    bottom: 30px;
+    opacity: 30%; } }
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/images/backg.gif");
+  background-position: center center;
+  position: relative; }
+  .hero .fas {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 50px;
+    font-size: 30px;
+    color: white;
+    animation-name: change;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.75, 0.25, 0.25, 0.75); }
+
+body {
+  font: 14px "Montserrat", Helvetica, Arial, sans-serif;
+  background-color: oldlace;
+  margin: 0; }
+
+a {
+  color: #00B7FF; }
+
+/*# sourceMappingURL=style.css.map */
