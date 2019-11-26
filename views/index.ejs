@@ -5,10 +5,22 @@
   <title><%= title %></title>
   <link rel='stylesheet' href='/stylesheets/style.css' />
   <link rel='stylesheet' href='/stylesheets/all.css' />
+  <link rel='stylesheet' href='/stylesheets/magnific-popup.css' />
+  <link rel='stylesheet' href='/stylesheets/animate.css' />
+
   <script src="/javascripts/jquery-3.4.1.js"></script>
   <script src="/javascripts/scroll.js"></script>
+  <script src="/javascripts/scroll2.js"></script>
   <script src="/javascripts/vidpop.js"></script>
+  <script src="/javascripts/wow.js"></script>
+  <script src="/javascripts/jquery.magnific-popup.js"></script>
+
   <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
+
+  <script>
+    new WOW().init();
+
+  </script>
 </head>
 
 <!--Splash Screen and Buttons-->
@@ -16,7 +28,7 @@
 <body>
   <section id="home">
     <div class="video_contain">
-      <div id="flash">
+      <div id="fade">
         <video autoplay muted loop>
           <source src="/images/ryansplash.mp4" type="video/mp4">
         </video>
@@ -46,7 +58,7 @@
 
   <!--Content Section-->
   <section id="work">
-    <div class="opener">
+    <div class="opener wow fadeIn">
       <div class="vl"></div>
       <br>
       <h1>Ryan Lin</h1>
@@ -54,14 +66,17 @@
       <br>
     </div>
     <hr class="drop">
-    <div class="gallery">
-      <a class="popup-youtube" href="https://www.youtube.com/watch?v=iliqqXV9Kwo">
-        <img width="100%" src="/images/neeko.png" />
-        <i class="far fa-play-circle"></i>
-      </a>
+    <div class="bigscreen">
+      <div class="gallery wow fadeIn">
+        <a class="popup-youtube" href="https://www.youtube.com/watch?v=iliqqXV9Kwo">
+          <img width="100%" src="/images/neeko.png" />
+          <i class="far fa-play-circle"></i>
+        </a>
+      </div>
     </div>
 
-    <div class="row">
+
+    <div class="row wow fadeInUp">
       <div class="column1">
         <h2>Journey to Masters</h2>
         <h4>Adobe After Effects, Creator Suite</h4>
@@ -69,30 +84,69 @@
       </div>
       <div class="column2">
         <p>• Video game cinematic production, footage captured with keyframing software in high resolution<br><br>
-          • Post-production contained combined usage of 3D camera, masking, particles, and motion tracking<br><br>       
+          • Post-production contained combined usage of 3D camera, masking, particles, and motion tracking<br><br>
           • Utilized time remapping and knowledge on sound design to tell a story in film</p>
       </div>
     </div>
 
     <hr class="drop">
-    
-    <div class="gallery">
-      <a class="popup-youtube" href="https://www.youtube.com/watch?v=hx4JuYVlPQQ">
-        <img width="100%" src="/images/ryancat.gif" />
-        <i class="far fa-play-circle"></i>
-      </a>
+
+    <div class="row wow fadeIn">
+      <div class="column3">
+        <div class="gallery">
+          <a class="popup-youtube" href="https://www.youtube.com/watch?v=ArQ-VzDtsnw">
+            <img width="100%" src="/images/dragonsden.jpg" />
+            <i class="far fa-play-circle"></i>
+          </a>
+        </div>
+        <div class="column3c">
+          <h2>"Dragon's Den" Intro</h2>
+          <h4>Adobe After Effects</h4>
+          <h5>March 03, 2019</h5>
+          <p>• Utilization of parallax movement, motion blur, and wiggle expressions to create an illusion of perspective</p>
+        </div>
+      </div>
+      <div class="column4">
+        <div class="gallery">
+          <a class="popup-youtube" href="https://www.youtube.com/watch?v=SFyOauMHR6Y">
+            <img width="100%" src="/images/oddlysatisfying.jpg" />
+            <i class="far fa-play-circle"></i>
+          </a>
+        </div>
+        <div class="column4c">
+          <h2>"Oddly Satisfying" Intro</h2>
+          <h4>Adobe After Effects</h4>
+          <h5>March 15, 2019</h5>
+          <p>• Use of 3D camera, liquify tool, particle world, color correction, and glitch effects for a fluid text transition</p>
+        </div>
+      </div>
     </div>
 
-    <div class="row">
+    <hr class="drop">
+
+    <div class="bigscreen">
+      <div class="gallery wow fadeInUp">
+        <a class="popup-youtube" href="https://www.youtube.com/watch?v=hx4JuYVlPQQ">
+          <img width="100%" src="/images/ryancat.gif" />
+          <i class="far fa-play-circle"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="row wow fadeInUp">
       <div class="column1">
-        <h2>Paintbrush Dreaming</h2>
-        <h4>Adobe Photoshop, Premiere Pro</h4>
-        <h5>November 30, 2017</h5>
+        <div class="column1s">
+          <h2>Paintbrush Dreaming</h2>
+          <h4>Adobe Photoshop, Premiere Pro</h4>
+          <h5>November 30, 2017</h5>
+        </div>
       </div>
       <div class="column2">
-        <p>• Content<br><br>
-          • Content<br><br>       
-          • Content</p>
+        <div class="column2s">
+        <p>• Hand drawn 2D animation, created frame by frame in Adobe Photoshop for the project's foundation in gif format<br><br>
+          • Post-production was done in Adobe Premiere Pro, where I utilized keyframing to achieve character and object movement<br><br>
+          • Had a fun time making the cat come to life :)</p>
+        </div>
       </div>
     </div>
 

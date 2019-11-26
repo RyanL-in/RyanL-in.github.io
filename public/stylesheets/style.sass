@@ -1,6 +1,7 @@
-/* Fade on Scroll */
-#flash
-  opacity: 1;
+/* Animate.css */
+
+
+
 
 
 /* Body Content */
@@ -27,7 +28,7 @@ hr.drop
   
 .opener
   margin-top: 50px
-  margin-bottom: 50px  
+  margin-bottom: 100px  
   
 .opener p
   background: linear-gradient(to right, #fff0fe 0%, #f2ffff 100%);
@@ -45,7 +46,6 @@ h1
 h2
   font-size: 42px
   font-weight: 800
-  margin-top: 35px
 
 h4
   font: 14px "Alata", Helvetica, Arial, sans-serif
@@ -63,12 +63,13 @@ p
   text-align: center
   font-weight: 290
   
-  
+h2, h4, h5
+  margin-left: 50px
 
   
   
   
-/* Columns */
+/* Columns 1 and 2 */
 .column1
   text-align: right
   box-sizing: border-box
@@ -76,8 +77,8 @@ p
   width: 48%
   padding: 0px
   margin-right: 4%
-  height: 250px
-  
+  height: 300px
+
 .column2
   margin-top: 20px
   text-align: left
@@ -85,8 +86,104 @@ p
   float: left
   width: 37%
   padding: 10px
-  height: 250px
+  height: 300px
+  
+.column1 .column1s h2
+  font-size: 35px
+  
+.column1 .column1s
+  padding-top: 10px
 
+@media only screen and (max-width: 600px) 
+  .column1 
+    text-align: left
+    width: 100%
+    height: 125px
+    margin-top: -35px
+  .column2 
+    width: 100%
+    padding: 50px
+    margin-top: -20px
+  .column2s
+    margin-top: -15px
+  .bigscreen .gallery
+    padding-left: 5px
+    padding-right: 5px
+    
+    
+/* Columns 3 and 4 */
+.column3
+  text-align: right
+  box-sizing: border-box
+  float: left
+  width: 50%
+  height: 650px
+  padding-right: 0px
+  
+.column3 h2
+  font-size: 35px
+  
+.column3 h2, .column3 h4, .column3 h5
+  padding-right: 40px
+  
+.column3 .gallery
+  padding-right: 0
+  
+.column3 .column3c
+  margin-top: -15px
+  
+.column3 p
+  padding-right: 40px
+  padding-left: 250px
+  
+.column4
+  text-align: left
+  box-sizing: border-box
+  float: left
+  width: 50%
+  height: 650px
+  
+.column4 h2
+  font-size: 35px
+  
+.column4 p
+  margin-left: 40px
+  margin-right: 250px
+  
+.column4 h2, .column4 h4, .column4 h5
+  margin-left: 0px
+  padding-left: 40px
+  
+.column4 .gallery
+  padding-left: 0px
+
+.column4 .column4c
+  margin-top: -15px
+
+@media only screen and (max-width: 600px) 
+  .column3 
+    text-align: left
+    width: 100%
+    height: 570px
+  .column3 .column3c
+    margin-top: -30px
+  .row .column3 p
+    padding-left: 25px
+  .column3 .gallery
+    padding-left: 5px
+    padding-right: 5px
+  .column4 
+    text-align: left
+    width: 100%   
+    height: 600px
+    padding-right: 0px
+  .column4 .column4c
+    margin-top: -30px
+  .column4 .gallery
+    padding-left: 5px
+    padding-right: 5px
+ 
+    
   
 /* Clear floats after the columns */
 .row:after 
@@ -95,9 +192,11 @@ p
   display: table;
   clear: both;
 
-.row p
+.row .column2 p, .row .column4 p
   text-align: left
   
+.row .column3 p
+  text-align: right
   
   
 /* Video Cover Placement */
@@ -119,25 +218,53 @@ p
   
   opacity: 0.85
   
+  
 .gallery:hover
   opacity: 1
   transform: scale(0.98);
-
+  
   
   
 /* Icon Over Video */
 .gallery .far
-  color: white;
-  font-size: 80px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  color: white
+  font-size: 80px 
+  position: absolute
+  top: 50%
+  left: 50%
+  -webkit-transform: translate(-50%, -50%)
+  -ms-transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%)
   text-align: center;
   
   
+/* Magnific Popup */
+.mfp-fade.mfp-bg 
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
+
+.mfp-fade.mfp-bg.mfp-ready 
+	opacity: 0.8;
+
+.mfp-fade.mfp-bg.mfp-removing 
+	opacity: 0;
+
+
+.mfp-fade.mfp-wrap .mfp-content 
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content 
+	opacity: 1;
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content 
+	opacity: 0;
+
+
 
 
 /* Homepage Video Splash */
