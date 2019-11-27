@@ -30,7 +30,7 @@ hr.drop {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
-#work {
+#timeline {
   color: #fff; }
 
 /* Header Styles */
@@ -157,7 +157,7 @@ h2, h4, h5 {
     height: 570px; }
   .column3 .column3c {
     margin-top: -30px; }
-  .row .column3 p {
+  .column3 p {
     padding-left: 25px; }
   .column3 .gallery {
     padding-left: 5px;
@@ -168,7 +168,10 @@ h2, h4, h5 {
     height: 600px;
     padding-right: 0px; }
   .column4 .column4c {
-    margin-top: -30px; }
+    margin-top: -30px;
+    padding-left: 7px; }
+  .column4 p {
+    margin-right: 40px; }
   .column4 .gallery {
     padding-left: 5px;
     padding-right: 5px; } }
@@ -282,7 +285,7 @@ h2, h4, h5 {
   overflow: hidden;
   transition: 0.2s; }
 
-.buttons a:hover {
+.buttons a:hover, .buttons .bright {
   color: #255784;
   background: #f2ffff;
   box-shadow: 0 0 10px #3182ff, 0 0 40px #3182ff, 0 0 80px #3182ff;
@@ -339,8 +342,11 @@ h2, h4, h5 {
   transition: 0.5s;
   transition-delay: 0.375s; }
 
+html {
+  scroll-behavior: smooth; }
+
 /* Chevron */
-.video_contain .fas {
+.video_contain .chev {
   width: 100%;
   text-align: center;
   position: absolute;
@@ -365,15 +371,32 @@ h2, h4, h5 {
 .footer {
   position: relative;
   bottom: 0;
-  height: 110px;
+  height: 120px;
   width: 100%;
   background-color: #111;
   color: #eee;
   text-align: center;
-  padding-top: 25px; }
+  padding-top: 22px; }
+
+.footer h3 {
+  background: linear-gradient(to right, #f2ffff 0%, #fff0fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 .footer i {
   font-size: 20px;
   color: #eee; }
+
+.footer a {
+  margin-left: 40px; }
+
+.footer .f1 {
+  margin-right: 30px;
+  color: #f2ffff;
+  text-decoration: none; }
+
+.footer .f2 {
+  color: #fff0fe;
+  text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
