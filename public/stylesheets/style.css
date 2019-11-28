@@ -284,8 +284,8 @@ p {
   opacity: 0.9; }
 
 .bigscreen .gallery {
-  padding-left: 30px;
-  padding-right: 30px; }
+  padding-left: 25px;
+  padding-right: 25px; }
 
 .gallery:hover {
   opacity: 1;
