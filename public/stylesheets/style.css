@@ -119,7 +119,7 @@ p {
 
 @media only screen and (max-width: 500px) {
   .column1 {
-    margin-top: 0px; } }
+    margin-top: 10px; } }
 
 @media only screen and (max-width: 450px) {
   .column1 {
@@ -278,7 +278,7 @@ p {
   transform: scale(0.98); }
 
 /* Icon Over Video */
-.gallery .far {
+.gallery i {
   color: white;
   font-size: 80px;
   position: absolute;
