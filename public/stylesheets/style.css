@@ -249,6 +249,16 @@ p {
   .column4 p {
     margin-right: 40px; } }
 
+@media only screen and (min-width: 1281px) {
+  .column3 .gallery, .column4 .gallery {
+    margin-bottom: 5%; }
+  .column2 p {
+    margin-right: 40%; }
+  .column3 p {
+    margin-left: 50%; }
+  .column4 p {
+    margin-right: 50%; } }
+
 /* Clear floats after the columns */
 .row:after {
   box-sizing: border-box;
@@ -272,6 +282,10 @@ p {
   transition: .5s ease;
   transform: scale(0.95);
   opacity: 0.9; }
+
+.bigscreen .gallery {
+  padding-left: 30px;
+  padding-right: 30px; }
 
 .gallery:hover {
   opacity: 1;
