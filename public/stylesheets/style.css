@@ -265,6 +265,8 @@ p {
   .column3 .gallery, .column4 .gallery {
     margin-bottom: 5%; }
   .column2 p {
+    margin-right: 40%; }
+  .column2a p {
     margin-right: 20%; }
   .column3 p {
     margin-left: 50%; }
