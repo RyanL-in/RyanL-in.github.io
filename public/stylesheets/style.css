@@ -92,7 +92,9 @@ p {
   margin-bottom: 40px; }
 
 .column1 .column1a {
-  padding-top: 10px;
+  padding-top: 10px; }
+
+.column1 .column2a {
   margin-bottom: 20%; }
 
 @media only screen and (max-width: 800px) {
