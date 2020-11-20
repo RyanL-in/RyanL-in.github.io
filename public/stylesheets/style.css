@@ -286,10 +286,18 @@ p {
   text-align: left; }
 
 /* Column 5 and 6 */
-.poster {
+.posterleft {
   display: flex;
   justify-content: center;
-  margin-left: 8%;
+  margin-left: 50px;
+  transition: .5s ease;
+  transform: scale(0.95);
+  opacity: 0.95; }
+
+.posterright {
+  display: flex;
+  justify-content: center;
+  margin-right: 50px;
   transition: .5s ease;
   transform: scale(0.95);
   opacity: 0.95; }
@@ -298,15 +306,14 @@ p {
   box-sizing: border-box;
   float: left;
   width: 50%;
-  padding-right: 0px;
-  margin-bottom: 5%; }
+  padding-right: 0px; }
 
 .column6 {
   text-align: left;
   box-sizing: border-box;
   float: left;
   width: 50%;
-  margin-bottom: 5%; }
+  margin-top: 10px; }
 
 .column6 p {
   margin-left: 40px;
@@ -317,6 +324,26 @@ p {
   padding-left: 40px;
   padding-right: 40px; }
 
+.column7 {
+  text-align: right;
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  margin-top: 10px; }
+
+.column7 p, .column7 h2, .column7 h4, .column7 h5 {
+  margin-left: 160px;
+  margin-right: 35px; }
+
+.column8 {
+  box-sizing: border-box;
+  float: left;
+  width: 50%; }
+
+.columnEnd {
+  margin-bottom: 150px; }
+
+/* Mobile 5 & 6 */
 @media only screen and (max-width: 1200px) {
   .column6 p {
     margin-right: 100px; } }
@@ -331,7 +358,7 @@ p {
     height: auto;
     margin-top: 30px;
     margin-bottom: 15%; }
-  .column5 .poster {
+  .column5 .posterleft {
     padding-left: 5px;
     padding-right: 5px;
     margin-left: 0%; }
@@ -350,31 +377,51 @@ p {
 
 @media only screen and (max-width: 700px) {
   .column6 {
-    margin-top: -20px; } }
+    margin-top: -10px; } }
 
 @media only screen and (max-width: 650px) {
   .column6 {
-    margin-top: -30px; } }
+    margin-top: -20px; } }
 
 @media only screen and (max-width: 600px) {
   .column6 {
-    margin-top: -40px; } }
+    margin-top: -30px; } }
 
 @media only screen and (max-width: 550px) {
   .column6 {
-    margin-top: -50px; } }
+    margin-top: -40px; } }
 
 @media only screen and (max-width: 500px) {
   .column6 {
-    margin-top: -60px; } }
+    margin-top: -50px; } }
 
 @media only screen and (max-width: 450px) {
   .column6 {
-    margin-top: -70px; } }
+    margin-top: -60px; } }
 
 @media only screen and (max-width: 400px) {
   .column6 {
-    margin-top: -80px; } }
+    margin-top: -70px; } }
+
+/* Mobile 7 & 8 */
+@media only screen and (max-width: 800px) {
+  .column8 {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: -10%; }
+  .column8 .posterright {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 0%; }
+  .column7 {
+    text-align: left;
+    width: 100%;
+    margin-top: -100px; }
+  .column7 p, .column7 h2, .column7 h4, .column7 h5 {
+    margin-left: 40px; }
+  .columnEnd {
+    margin-bottom: -10%; } }
 
 /* Video Cover Placement */
 .gallery {
@@ -390,7 +437,7 @@ p {
   transform: scale(0.95);
   opacity: 0.9; }
 
-.gallery:hover, .poster:hover {
+.gallery:hover, .posterleft:hover, .posterright:hover {
   opacity: 1;
   transform: scale(0.98); }
 
@@ -407,7 +454,7 @@ p {
   transform: translate(-50%, -50%);
   text-align: center; }
 
-/* Magnific Popup */
+/* Magnific Popup Video */
 .mfp-fade.mfp-bg {
   opacity: 0;
   -webkit-transition: all 0.15s ease-out;
@@ -430,6 +477,39 @@ p {
   opacity: 1; }
 
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0; }
+
+/* Magnific Popup Image */
+/* padding-bottom and top for image */
+.mfp-no-margins img.mfp-img {
+  padding: 0; }
+
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+  top: 0;
+  bottom: 0; }
+
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+  padding: 0; }
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+  opacity: 1; }
+
+.mfp-with-zoom.mfp-ready.mfp-bg {
+  opacity: 0.8; }
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
   opacity: 0; }
 
 /* Homepage Video Splash */
