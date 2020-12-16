@@ -429,7 +429,9 @@ p {
   .column7 p, .column7 h2, .column7 h4, .column7 h5 {
     margin-left: 40px; }
   .columnEnd {
-    margin-bottom: -10%; } }
+    margin-bottom: -10%; }
+  .column7 .column7b {
+    margin-bottom: -25%; } }
 
 /* Video Cover Placement */
 .gallery {
