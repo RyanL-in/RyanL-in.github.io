@@ -689,9 +689,6 @@ html {
   padding-top: 22px; }
 
 .footer h3 {
-  background: linear-gradient(to right, #f2ffff 0%, #fff0fe 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   padding-left: 5px;
   padding-right: 5px;
   font-weight: 500; }
