@@ -453,13 +453,19 @@ p {
     text-align: left;
     width: 100%;
     margin-top: -100px; }
+  .columntop {
+    text-align: left;
+    width: 100%;
+    margin-top: -100px; }
   .column7 p, .column7 h2, .column7 h4, .column7 h5 {
     margin-left: 40px; }
   .columntop p, .columntop h2, .columntop h4, .columntop h5 {
     margin-left: 40px; }
   .columnEnd {
     margin-bottom: 0px; }
-  .column7 .column7b .columntop {
+  .column7 .column7b {
+    margin-bottom: -25%; }
+  .columntop {
     margin-bottom: -25%; } }
 
 /* Video Cover Placement */
