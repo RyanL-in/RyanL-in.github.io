@@ -336,15 +336,11 @@ p {
   width: 50%;
   margin-top: 10px; }
   
-.columnbio {
-  text-align: right;
-  box-sizing: border-box;
-  float: left;
-  width: 50%;
-  margin-top: 10px; }
+.columntop {
+  text-align: right; }
 
 .column7 p, .column7 h2, .column7 h4, .column7 h5 {
-  margin-left: 200px;
+  margin-left: 300px;
   margin-right: 35px; }
 
 .column8 {
@@ -370,7 +366,7 @@ p {
 
 @media only screen and (min-width: 1281px) {
   .column7 p {
-    margin-left: 35%; } }
+    margin-left: 45%; } }
 
 @media only screen and (max-width: 800px) {
   .column5 {
