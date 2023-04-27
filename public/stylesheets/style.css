@@ -337,12 +337,11 @@ p {
   margin-top: 10px; }
   
 .columntop {
-  text-align: right;
-  margin-bottom: -25%; }
+  text-align: right; }
 
 .column7 p, .column7 h2, .column7 h4, .column7 h5 {
-  margin-left: 300px;
-  margin-right: 35px; }
+  margin-left: 150px;
+  margin-right: 40px; }
 
 .column8 {
   box-sizing: border-box;
@@ -367,7 +366,7 @@ p {
 
 @media only screen and (min-width: 1281px) {
   .column7 p {
-    margin-left: 45%; } }
+    margin-left: 40%; } }
 
 @media only screen and (max-width: 800px) {
   .column5 {
