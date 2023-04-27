@@ -330,18 +330,26 @@ p {
   padding-right: 40px; }
 
 .column7 {
-  text-align: right;
+  text-align: left;
   box-sizing: border-box;
   float: left;
   width: 50%;
   margin-top: 10px; }
   
 .columntop {
-  text-align: right; }
+  text-align: right;
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  margin-top: 10px; }
 
 .column7 p, .column7 h2, .column7 h4, .column7 h5 {
   margin-left: 150px;
   margin-right: 40px; }
+
+.columntop p, .columntop h2, .columntop h4, .columntop h5 {
+  margin-left: 150px;
+  margin-right: 40px; }  
 
 .column8 {
   box-sizing: border-box;
@@ -360,6 +368,10 @@ p {
   .column7 p {
     margin-left: 100px; } }
 
+@media only screen and (max-width: 1200px) {
+  .columntop p {
+    margin-left: 100px; } }
+
 @media only screen and (min-width: 1281px) {
   .column6 p {
     margin-right: 40%; } }
@@ -367,6 +379,10 @@ p {
 @media only screen and (min-width: 1281px) {
   .column7 p {
     margin-left: 40%; } }
+
+@media only screen and (min-width: 1281px) {
+  .columntop p {
+    margin-left: 35%; } }
 
 @media only screen and (max-width: 800px) {
   .column5 {
@@ -439,9 +455,11 @@ p {
     margin-top: -100px; }
   .column7 p, .column7 h2, .column7 h4, .column7 h5 {
     margin-left: 40px; }
+  .columntop p, .columntop h2, .columntop h4, .columntop h5 {
+    margin-left: 40px; }
   .columnEnd {
     margin-bottom: 0px; }
-  .column7 .column7b {
+  .column7 .column7b .columntop {
     margin-bottom: -25%; } }
 
 /* Video Cover Placement */
