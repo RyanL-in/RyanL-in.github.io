@@ -335,6 +335,13 @@ p {
   float: left;
   width: 50%;
   margin-top: 10px; }
+  
+.columnbio {
+  text-align: right;
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  margin-top: 10px; }
 
 .column7 p, .column7 h2, .column7 h4, .column7 h5 {
   margin-left: 200px;
