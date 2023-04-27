@@ -330,14 +330,15 @@ p {
   padding-right: 40px; }
 
 .column7 {
-  text-align: left;
+  text-align: right;
   box-sizing: border-box;
   float: left;
   width: 50%;
   margin-top: 10px; }
   
 .columntop {
-  text-align: right; }
+  text-align: right;
+  margin-bottom: -25%; }
 
 .column7 p, .column7 h2, .column7 h4, .column7 h5 {
   margin-left: 300px;
